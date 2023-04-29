@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="413dp"
+        android:layout_height="831dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="My Bio"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/pictureImageView"
+            android:layout_width="236dp"
+            android:layout_height="151dp"
+            android:layout_below="@+id/titleTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="74dp"
+            app:srcCompat="@drawable/_43266586_1594771901021395_3965012207050479058_n" />
+
+        <EditText
+            android:id="@+id/hobbyEditText"
+            style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="238dp"
+            android:layout_height="67dp"
+            android:layout_below="@+id/pictureImageView"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="25dp"
+
+            android:layout_marginEnd="83dp"
+            android:background="#346E1D49"
+            android:hint="Enter Rateeba's Hobbies here"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <Button
+            android:id="@+id/addHobbyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hobbyEditText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="144dp"
+            android:background="#510D1B"
+            android:text="Add Hobby"
+            app:rippleColor="#BC5A0232" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
